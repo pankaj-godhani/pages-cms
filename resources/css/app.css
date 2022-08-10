@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    ul, li {
+        list-style: revert;
+    }
+
+    ul { list-style-position: inside; }
+
+    ul > li {
+        margin-left: 15px;
+    }
+}
