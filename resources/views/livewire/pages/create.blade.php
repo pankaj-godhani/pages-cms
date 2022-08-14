@@ -1,5 +1,9 @@
-<div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-4 mt-5">
+<div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
     <div class="border border-gray-200 p-6 rounded-lg">
+        <div>
+            <p class="text-xl font-semibold mb-5">Add Page</p>
+        </div>
+
         <div>
             <x-jet-label for="slug">{{ __('Slug') }}</x-jet-label>
 
@@ -25,7 +29,7 @@
         </div>
 
         <div class="flex justify-end w-full">
-            <x-jet-button class="mt-4" wire:click="addPage">
+            <x-jet-button class="mt-4" wire:click="createPage">
                 {{ __('Submit') }}
             </x-jet-button>
         </div>

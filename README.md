@@ -2,7 +2,7 @@ Steps to setup project:
 - clone project
 - duplicate .env.example file to .env file.
 - create `cms_pages` database.
-- run below command
+- after that run below commands
     - php artisan migrate
     - php artisan db:seed
     - yarn && yarn run dev (OR) npm && npm run dev
@@ -13,5 +13,5 @@ Steps to setup project:
     - password: password
 
 Functionality notes:
-- module is added on main page to add parent page.
+- one module is added on main page to add page on parent level.
 - when click on nested list, a page with content & title will open, and there you can also add, its related child page.

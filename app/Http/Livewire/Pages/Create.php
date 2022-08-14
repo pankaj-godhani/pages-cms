@@ -3,7 +3,6 @@
 namespace App\Http\Livewire\Pages;
 
 use App\Models\Page;
-use Illuminate\Support\Facades\Request;
 use Livewire\Component;
 
 class Create extends Component
@@ -16,7 +15,7 @@ class Create extends Component
         return view('livewire.pages.create');
     }
 
-    public function addPage()
+    public function createPage()
     {
         $validated = $this->validate([
             'slug'    => ['required', 'string', 'max:255'],

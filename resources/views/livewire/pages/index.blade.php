@@ -4,14 +4,14 @@
     </h2>
 </x-slot>
 
-<div class="py-12 flex">
-    <div class="sm:px-6 lg:px-8 w-3/5 mt-5">
-        <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-5">
+<div class="md:py-10 md:px-24 flex md:flex-row flex-col md:space-x-5 space-y-5">
+    <div class="md:w-3/5 w-full mt-5">
+        <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-3 py-5">
             @include('partials.pages', ['pages' => $pages, 'link' => ''])
         </div>
     </div>
 
-    <div class="sm:px-6 lg:px-8 w-2/5">
+    <div class="md:w-2/5 w-full">
         <livewire:pages.create />
     </div>
 </div>
